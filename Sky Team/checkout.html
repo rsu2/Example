@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<header>
+<div class="nav-back">
+	<div class="nav-content">
+		<img src="img/logo.png" alt="logo icon">
+		<ul>
+			<li><a href="shop.html">shop</a></li>
+			<li><a href="check.html">checkout</a></li>
+			<li><a href="video.html">video</a></li>
+		</ul>
+		
+		<div class="search">
+			<input type="text" name="search">
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div>
+</header>
+<main>
+<div class="constrain">
+	<div class="left">
+		<span class="header">Team Sky Payment Checkout</span>
+		<span class="tags"><a href="#">Cart</a>&lt;<a href="#">Custormer Information</a>&lt;<a href="#">Shipping method</a>&lt;Payment method</span>
+
+		<span class="form-header">Customer information</span>
+		<input class="detail" type="text" name="email" value="Email">
+		<span class="form-account">Already have an account with us?</span><a href="#">Log in</a>
+    
+		<span class="form-header">Payment method</span>
+		<span class="form-payment">All transactions are secure and encypted. Credit card information is never stored</span>
+
+		<div class="form">
+			<span>Credit Card</span>
+			<input class="card" type="text" name="cardnumber" value="Card number">
+			<input class="information" type="text" name="name" value="Name on card" >
+			<input class="date" type="text" name="expiry" value="MM/YY">
+			<input class="code" type="text" name="cw" value="CW">
+		</div>
+
+		
+
+		<span class="shipping">Shipping address</span>
+		<div class="shipping">
+			<input class="first-n" type="text" name="fName" value="First name">
+			<input class="last-n" type="text" name="lName" value="Last name">
+			<input class="home" type="text" name="address" value="Address">
+			<input class="apt-number" type="text" name="addresses" value="Apt, suite, etc.(optional)">
+			<input class="living" type="text" name="city" value="City" >
+			<input class="tele" type="text" name="phone" value="Phone number">
+			<input class="fax" type="text" name="fax" value="Fax number">
+			<input class="post" type="text" name="post" value="Postal code" size="10"><br>
+			<input class="check" type="checkbox" name="save">
+			<span class="form-info">Save this information for next time</span><br>
+			<button>Make Payment</button>
+
+		</div>
+	</div>
+
+	<div class="right">
+		<div class="product">
+			<div class="product-img"></div>
+			<div class="product-info">Team Sky Short Sleeve Brevet Jersey</div>
+			<div class="product-price">$225.00</div>
+		</div>
+
+		<div class="clear"></div>
+		<hr>
+
+
+		<div class="fee">
+			Subtotal <div id="subtotal">$225.00</div>
+			<div class="clear"></div>
+			Shipping <div id="shippingfee">$18.00</div>
+		</div>
+		<hr>
+
+		<div class="total">
+			Total <div id="total"><span>CAD</span>$243.00</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+</main>
+</body>
+</html>
